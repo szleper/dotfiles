@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Prevents accidentally clobbering files.
+alias rm='rm -iv'
+alias cp='cp -iv'
+alias mv='mv -iv'
+
+# Dir utils
+alias mkdir='mkdir -pv'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# Ls
+alias ll='ls -lG'
+alias la='ls -AG'
+alias lla='ls -lAG'
+
+# Grep
+alias grep='grep --color'
+
+# Json formatting
+alias jsonf='python -m json.tool'
+
+# Git
+alias gl='git log --oneline -15'
+alias gs='git status'
+alias gb='git branch -a'
+
+# Conda
+alias cie="conda info --envs"

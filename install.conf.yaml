@@ -1,5 +1,6 @@
 - clean: ['~']
 
 - link:
+    ~/.aliases: aliases
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
