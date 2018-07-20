@@ -1,0 +1,22 @@
+#!/bin/bash
+
+function bashrc()
+{
+    ${EDITOR:-vi} ~/.bashrc
+    source ~/.bashrc
+    echo "Bash config edited and reloaded."
+}
+
+function aliases()
+{
+    ${EDITOR:-vi} ~/.aliases
+    source ~/.aliases
+    echo "Aliases edited and reloaded."
+}
+
+function functions()
+{
+    ${EDITOR:-vi} ~/.functions
+    source ~/.functions
+    echo "Functions edited and reloaded."
+}
