@@ -23,6 +23,8 @@ alias jsonf='python -m json.tool'
 
 # Git
 alias gl='git log --oneline -15'
+alias gl2='git log --oneline -30'
+alias gl3='git log --oneline -60'
 alias gs='git status'
 alias gb='git branch -a'
 alias gd='git diff'
@@ -31,6 +33,11 @@ alias gsta='git stash apply'
 alias gstl='git stash list'
 alias gsts='git stash save'
 alias gstd='git stash drop'
+
+# Tmux
+alias txa='tmux attach'
+alias txn='tmux new -s'
+alias txl='tmux ls'
 
 # Conda
 alias cie="conda info --envs"
