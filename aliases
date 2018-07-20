@@ -25,6 +25,21 @@ alias jsonf='python -m json.tool'
 alias gl='git log --oneline -15'
 alias gs='git status'
 alias gb='git branch -a'
+alias gd='git diff'
+alias glp='git log --patch'
+alias gsta='git stash apply'
+alias gstl='git stash list'
+alias gsts='git stash save'
+alias gstd='git stash drop'
 
 # Conda
 alias cie="conda info --envs"
+
+# Terminal
+alias c="clear"
+
+# Edit shortcuts
+alias vimrc="${EDITOR:-vi} ~/.vimrc"
+alias sshconfig="${EDITOR:-vi} ~/.ssh/config"
+alias tmuxc="${EDITOR:-vi} ~/.tmux.conf"
+alias gitconfig="${EDITOR:-vi} ~/.gitconfig"
