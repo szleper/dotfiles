@@ -8,6 +8,7 @@ set -o vi
 source ~/.aliases
 source ~/.functions
 
+# Completion
 for FILE in ~/.dotfiles/completion/*
 do
     source $FILE
