@@ -4,4 +4,11 @@
     ~/.aliases: aliases
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
+    ~/.completion: completion
     ~/.functions: functions
+
+- shell:
+    - > # Add git completion
+        git --version | awk '{print $3}' |
+        xargs -L1 -I% wget https://raw.githubusercontent.com/git/git/v%/contrib/completion/git-completion.bash &&
+        mv -f git-completion.bash completion/
