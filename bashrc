@@ -13,3 +13,8 @@ for FILE in ~/.dotfiles/completion/*
 do
     source $FILE
 done
+
+# Allow local customizations
+if [ -f ~/.bashrc_local ]; then
+    source ~/.bashrc_local
+fi
