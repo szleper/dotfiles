@@ -6,9 +6,14 @@
     ~/.bash_profile: bash_profile
     ~/.completion: completion
     ~/.functions: functions
+    ~/.vimrc: vimrc
 
 - shell:
     - > # Add git completion
         git --version | awk '{print $3}' |
         xargs -L1 -I% wget https://raw.githubusercontent.com/git/git/v%/contrib/completion/git-completion.bash &&
         mv -f git-completion.bash completion/
+    - > # Add vundle
+        rm -rf ~/.vim/ &&
+        git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim &&
+        vim -c 'PluginInstall' -c 'qa!'
