@@ -1,3 +1,9 @@
+# Exports
+export EDITOR=vim
+
+# Vimode
+set -o vi
+
 # Aliases
 source ~/.aliases
 source ~/.functions
