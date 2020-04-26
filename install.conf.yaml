@@ -11,7 +11,7 @@
 - shell:
     - > # Add git completion
         git --version | awk '{print $3}' |
-        xargs -L1 -I% wget https://raw.githubusercontent.com/git/git/v%/contrib/completion/git-completion.bash &&
+        xargs -L1 -I% curl https://raw.githubusercontent.com/git/git/v%/contrib/completion/git-completion.bash > git-completion.bash &&
         mv -f git-completion.bash completion/
     - > # Add vundle
         rm -rf ~/.vim/ &&
